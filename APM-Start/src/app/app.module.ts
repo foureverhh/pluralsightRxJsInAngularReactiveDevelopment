@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './home/welcome.component';
 import { PageNotFoundComponent } from './page-not-found.component';
 
+import { CookieService } from 'ngx-cookie-service'
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -22,6 +24,9 @@ import { PageNotFoundComponent } from './page-not-found.component';
     AppComponent,
     WelcomeComponent,
     PageNotFoundComponent
+  ],
+  providers: [
+    CookieService
   ],
   bootstrap: [AppComponent]
 })
